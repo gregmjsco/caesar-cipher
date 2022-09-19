@@ -1,8 +1,8 @@
 def caeser_cipher(text, shift)
-    alphabet = ("a".."z").to_s
+    alphabet = ("a".."z").to_a
     caesar = ""
 
-    str.each_char do |letter|
+    text.each_char do |letter|
         if letter == " "
             caesar += " "
         else
